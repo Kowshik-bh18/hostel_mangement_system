@@ -3,49 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="logstyle.css" />
+    <link rel="stylesheet" href="styl.css" />
     <link rel="icon" href="logo.png" />
     <title>BCMH</title>
   </head>
-      <body>
-      <div class="container">
-          <div class="help-support">
-               <button>
-                     <a href="mailto:kobh22cs@cmrit.ac.in">help&support</a>
-               </button>
+  <body>
+    <div class="container">
+      <!--help and support button-->
+      <div class="help-support">
+        <button class="helbutton">
+          <a href="mailto:kobh22cs@cmrit.ac.in" class="a1">help&support</a>
+        </button>
+
+        <!--Hostel logo-->
+        <img
+          class="img"
+          src="loginlogo.png"
+          alt="bcm"
+          height="80px"
+          width="80px"
+          title="BCM"
+        />
+
+        <!--To display dialog box when logo is pressed -->
+        <dialog class="dialog">
+          <div>
+            <p>
+              The BCM Hostel in Siddapura, Bengaluru, is part of Karnataka’s
+              welfare initiative to support students from economically and
+              socially disadvantaged backgrounds. <br />for more information
+              visit:
+              <a
+                href="https://bcwd.karnataka.gov.in/new-page/Post%20Matric%20Hostel%20Admission%202023-24/en"
+                class="a3"
+                >BCWD</a
+              >
+            </p>
+            <button class="closedialog">Close</button>
           </div>
-          
-          <div class="login-container">
-            <h2>BCM POSTMETRIC BOYS HOSTEL</h2>
-            <form>
-              <label for="username">Name:</label>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Enter your name"
-                required
-              />
+        </dialog>
+      </div>
 
-              <label for="password">Password:</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="Enter your password"
-                required
-              />
+      <div class="login-container">
+        <h2>BCM POSTMETRIC BOYS HOSTEL</h2>
+        <form>
+          <!--input elements for password and name along with student and warden login button-->
+          <label for="username">Name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your name"
+            required
+          />
 
-              <div class="button-group">
-                <button type="submit" class="student-button">
-                  Student Login
-                </button>
-                <button type="submit" class="warden-button">
-                  Warden Login
-                </button>
-              </div>
-            </form> 
-         </div>
-     </div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <div class="button-group">
+            <button type="submit" class="student-button">Student Login</button>
+            <button type="submit" class="warden-button">Warden Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--for moving text to dislay welcome message-->
+    <div class="movingtext">
+      <marquee direction="left" scrollamount="10" loop="-1" behavior="scroll">
+        Welcome to BCM - Post Metric Boys Hostel,Siddapura!
+      </marquee>
+    </div>
+
+    <!--To link javascript-->
+    <script src="loginscript.js"></script>
   </body>
 </html>

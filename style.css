@@ -6,10 +6,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("back.png");
+  background-image: url("background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #f4f4f4;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -21,33 +21,39 @@ body {
   align-items: center;
 }
 
-.help-support {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-a{
-  text-decoration: none;
-}
-
+/* To style help and support button and give hover effect */
 .help-support button {
-  color: white;
+  color: rgb(216, 219, 216);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  background-color: #28a745;
 }
 
 .help-support button:hover {
-  background-color: darkblue;
+  background-color: darkgreen;
+}
+.help-support {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.helbutton {
+  background-color: #28a745;
+}
+
+.a1 {
+  color: white;
+  text-decoration: none;
 }
 
 .login-container {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 350px;
 }
@@ -65,7 +71,6 @@ a{
   text-align: left;
 }
 
-.login-container input,
 .login-container input {
   width: 100%;
   padding: 10px;
@@ -74,13 +79,13 @@ a{
   border-radius: 4px;
 }
 
-
 .button-group {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
 
+/* To style student and warden button*/
 .student-button,
 .warden-button {
   width: 48%;
@@ -92,7 +97,40 @@ a{
   cursor: pointer;
 }
 
+/* To give hover effect to student and warden button login*/
 .student-button:hover,
 .warden-button:hover {
   background-color: darkgreen;
+}
+
+/* For hostel logo */
+img {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+/* To style dialog box and link inside it.*/
+.dialog {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+}
+
+.a3 {
+  text-decoration: none;
+}
+
+/* For styling marquee */
+.movingtext {
+  color: rgba(171, 216, 25, 0.781);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  position: fixed;
+  top: 0px;
 }
